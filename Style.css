@@ -1,0 +1,539 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+html {
+    
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato' , "Arial" , sans-serif; 
+    font-weight: 300;
+    font-size: 20px;
+    text-rendering: optimizeLegibility;
+
+}
+
+
+
+
+.row {
+    
+     max-width: 1600px;
+    margin: 0 auto;
+}
+
+
+
+
+body {
+    
+    font-family: sans-serif;
+      
+}
+
+ /* top- nav -------------------------------------------- */
+/* -------------------------------------------------------- */
+
+
+
+
+.container {
+    
+    width: 90%;
+    margin: 0 auto;
+    
+    
+}
+
+
+
+.navbar {
+    
+    width: 100%;
+    overflow: hidden;
+    height: 70x;
+    line-height: 70px;
+    background: #fff;
+    border-bottom: 2px solid black;
+    position: fixed;
+    z-index: 9999 !important;
+    }
+
+.logo {
+   padding-top: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    margin-left: 130px;
+    width: 160px;
+    float: left;
+  
+    
+}
+
+
+
+/* this is for ul tag */
+
+.menu {
+    
+    float: right;
+   
+    
+}
+
+.menu li {
+    
+    width: 120px;
+    float: left;
+     height: 70px;
+    line-height: 70px;
+    text-align: center;
+    list-style: none;
+}
+
+
+.menu li a {
+      
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    
+    
+}
+
+
+.menu li:hover {
+    
+    background: #e67e22;
+}
+
+.menu li a:hover {
+    
+    color: #fff;
+}
+
+
+
+label {
+ 
+    margin: 0 0 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    width: 26px;
+    float: right;
+    visibility: hidden;
+   
+}
+
+
+
+#toggle { 
+
+display: none;
+    
+}
+
+
+
+@media only screen and (max-width: 991px)  {
+    
+    
+    
+    .logo { margin-left: 30px;}
+    
+   
+   .menu{ 
+     
+    text-align: center;
+    width: 60%;
+    display: none;
+    }
+    
+    
+    .menu a {
+        
+        
+        display: grid;
+        border-bottom: 1px solid #eaeaeb;
+        margin: 0;
+        
+    }
+
+   label{
+         
+       visibility: visible;
+        display: block;
+       cursor: pointer;
+    }
+
+
+    #toggle:checked + .menu {
+        
+        display:grid;
+     
+    }
+    
+    
+    
+} 
+    
+
+
+
+
+
+
+
+
+/* -------------------------------------------------------- */
+
+/* -------------------------------------------------------- */
+
+header {
+    
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(card2.jpg);
+    background-color: gray; 
+    background-size: cover;
+    background-position: center; 
+    height: 100vh;
+   
+      
+}
+
+
+
+.hero-text-box
+
+{
+
+    position:absolute;
+    width: 1140px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+
+
+
+.phara { 
+  color: #fff;
+  margin-top: 20px;
+}
+
+
+
+
+h1,
+h2,
+h3 {
+    
+   
+   font-weight: 300;
+    text-transform: uppercase;
+    
+    
+}
+ 
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #fff;
+    font-size: 240%;
+    white-space: 4px;
+    letter-spacing: 1px;
+}
+
+h2{
+
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+
+}
+
+
+h2:after {
+    
+    display: block;
+    height: 2px;
+    background-color: #e67e22;
+    content: " ";
+    width: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
+    
+}
+
+
+.box p {
+    
+    font-size: 90%;
+    line-height: 145%;
+}
+
+
+
+
+.box1 {
+    padding: 1%; 
+   
+
+}
+
+.section-features {
+        
+    background-size: cover;
+    background-position: center;
+    padding: 60px 0;
+    
+}
+
+#sec2h {
+    
+    padding-left: 5px
+    
+}
+
+.icon-big {
+    
+    font-size: 350%;
+    display: block;
+    color: #e67e22;
+    margin-bottom: 25px;
+
+}
+
+
+
+
+.section-cards {
+  
+    background-color: rgb(240, 240, 240);
+    padding-top: 60px;
+    padding-bottom: 10px;
+  
+}    
+
+
+.psection {
+ 
+    text-align:center;
+    
+}
+    
+.box2 {
+   
+    padding: 1%;
+    display:inline-block;
+    float: center;
+    margin-top: 90px;
+    margin-left: 18px;
+    font-size: 75%;
+    border-style: solid;
+
+
+    
+}
+
+
+.box2-img { 
+    
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+    transition-property: width, height;
+   }
+
+
+.box2-img:hover {
+    
+    
+    transform: scale(1.20)
+}
+
+
+
+
+
+.items-head {
+    
+    padding-left: 5px
+    
+}
+
+
+.type {
+    
+padding-left: 5px
+    
+}
+
+.price {
+    
+ padding-left: 5px
+}
+
+.shipping {
+    
+   padding-left: 5px
+}
+
+
+
+.class-link {
+    
+   
+    display: inline-block;
+    padding-top: 15px;
+    padding: 10px 30px;
+    font-weight: 300;
+    text-decoration: none;
+    border-radius: 200px;
+    border: 1px solid;
+    color: #fff;
+    background-color: #e67e22;
+    
+   
+;
+    
+    
+}
+
+.div-link {
+    
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    transition-property: width, height;
+    padding-bottom: 3px;
+    
+}
+
+
+.div-link:hover {
+    
+    height: 70%;
+    transform: scale(1.15)
+}
+
+.icon-small {
+    
+    padding-right: 5px;
+color: green;
+}
+
+
+/* -------------------------------------------------------- */
+       
+/* -------------------------------------------------------- */
+
+
+
+/* -------------------------------------------------------- */
+       
+/* -------------------------------------------------------- */
+
+.new {
+    
+    background-image:linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(card3.jpg);
+    background-size: cover;
+    background-position: center; 
+    color: #fff;
+    
+    
+    
+    
+}
+
+.test-container {
+    
+    margin-left: 150px;
+}
+
+
+.new h2 {
+    
+    padding-top: 20px;
+}
+
+.new p {
+    
+    font-size:110%;
+  
+    
+}
+
+.new img {
+    margin-top: 10px;
+    height:50px;
+    width: 50px;
+    border-radius: 50%;
+    
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .test-container {
+    text-align: center;
+   margin-left: 3px;
+}
+    
+    
+    .lit-box {
+        
+        margin-bottom: 70px;
+    }
+    
+    .new p {
+    
+    font-size: 90%;
+  
+    
+}
+    
+    
+}
+
+/* -------------------------------------------------------- */
+       
+/* -------------------------------------------------------- */
+
+
+
+
+footer {
+    
+    background-color: black;
+    color: white;
+    text-align: center
+        
+}
+
+footer a {
+    
+    color: white;
+}
+
+
+
